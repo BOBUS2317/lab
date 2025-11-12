@@ -37,114 +37,23 @@ using namespace std;
 //    return 0;
 //}
 
-//3 task
-//int main()
-//{
-//    setlocale(LC_ALL, "Russian");
-//    double x, y, z; // Задаю переменные
-//    cout << "Введите x: ";
-//    cin >> x;
-//    cout << "Введите у: ";
-//    cin >> y;
-//    cout << "Введите z: ";
-//    cin >> z;
-//    double res = log((y - pow(abs(x),0.5))*(x-y/(z+(pow(x,2))/4))); // Произвожу вычисления согласно формуле
-//    cout << "Значение выражения: " << res << endl; // Вывожу ответ
-//    return 0;
-//}
-
-//lab 2
-// 1 task
-//int main() {
-//    int a, b, c, d;
-//    cout << "Введите четыре целых длины отрезков: ";
-//    cin >> a >> b >> c >> d;
-//
-//    cout << "Тройки отрезков, из которых можно составить треугольник:" << endl;
-//
-//    // Проверяем все возможные комбинации из 3 отрезков из 4
-//    // Комбинация 1: a, b, c
-//    if (a + b > c && a + c > b && b + c > a) {
-//        // Выводим в отсортированном порядке для уникальности
-//        int min1 = min(a, min(b, c));
-//        int max1 = max(a, max(b, c));
-//        int mid1 = a + b + c - min1 - max1;
-//        cout << min1 << " " << mid1 << " " << max1 << endl;
-//    }
-//
-//    // Комбинация 2: a, b, d
-//    if (a + b > d && a + d > b && b + d > a) {
-//        int min2 = min(a, min(b, d));
-//        int max2 = max(a, max(b, d));
-//        int mid2 = a + b + d - min2 - max2;
-//        cout << min2 << " " << mid2 << " " << max2 << endl;
-//    }
-//
-//    // Комбинация 3: a, c, d
-//    if (a + c > d && a + d > c && c + d > a) {
-//        int min3 = min(a, min(c, d));
-//        int max3 = max(a, max(c, d));
-//        int mid3 = a + c + d - min3 - max3;
-//        cout << min3 << " " << mid3 << " " << max3 << endl;
-//    }
-//
-//    // Комбинация 4: b, c, d
-//    if (b + c > d && b + d > c && c + d > b) {
-//        int min4 = min(b, min(c, d));
-//        int max4 = max(b, max(c, d));
-//        int mid4 = b + c + d - min4 - max4;
-//        cout << min4 << " " << mid4 << " " << max4 << endl;
-//    }
-//
-//    return 0;
-//}
-
-//2 task
-//int main() {
-//    setlocale(LC_ALL, "Russian");
-//    double x,y,res;
-//    cout << "Введите x: ";
-//    cin >> x;
-//    cout << "Введите y: ";
-//    cin >> y;
-//
-//    if (x > 0 && (x - 2 * y) > 0) {
-//        res = (1 - pow(x - 2 * y, 0.5)) / log(abs(x - y));
-//        cout << "Значение выражения: " << res << endl;
-//    }
-//    else if (x <= 0){
-//        res = exp(y) + log(1 - x);
-//        cout << "Значение выражения: " << res << endl;
-//    }
-//    else {
-//        res = (x - y) / (exp(x + y));
-//        cout << "Значение выражения: " << res << endl;
-//    }
-//    return 0;
-//}
-
-//3 task
-int main() {
+3 task
+int main()
+{
     setlocale(LC_ALL, "Russian");
-    double x,y;
+    double x, y, z; // Задаю переменные
     cout << "Введите x: ";
     cin >> x;
-    cout << "Введите y: ";
+    cout << "Введите у: ";
     cin >> y;
-
-    if ((pow(x, 2) - 6) > 0 && x > 0 && y < 0 && pow((16 - pow(x, 2), 0.5) < 0) {
-        cout << "Значение выражения: F" << endl;
-    }
-    /*else if (x <= 0){
-        res = exp(y) + log(1 - x);
-        cout << "Значение выражения: " << res << endl;
-    }
-    else {
-        res = (x - y) / (exp(x + y));
-        cout << "Значение выражения: " << res << endl;
-    }*/
+    cout << "Введите z: ";
+    cin >> z;
+    double res = log((y - pow(abs(x),0.5))*(x-y/(z+(pow(x,2))/4))); // Произвожу вычисления согласно формуле
+    cout << "Значение выражения: " << res << endl; // Вывожу ответ
     return 0;
 }
+
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
